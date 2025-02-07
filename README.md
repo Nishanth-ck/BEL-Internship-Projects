@@ -14,7 +14,7 @@ How to setup the projects :
 2) Install JavaFX in the laptop : follow the steps as specified in the youtube video -> https://youtu.be/_7OM-cMYWbQ?si=luzDZEF7Du-2-0RK <br>
 3) Install ScreenBuilder in the laptop : follow the steps as specified in the youtube video -> https://youtu.be/-Obxf6NjnbQ?si=daGSthdp6L0X95rP <br>
 4) Install PostgreSQL and pgAdmin4 in the laptop : follow the steps as specified in the youtube video -> https://youtu.be/4qH-7w5LZsA?si=rx68ckj5kXmhZOB3 <br>
-5) After completing the installations, clone this repository : " " and add it to "eclipse-workspace: folder in C drive. Both CTAP and MTAP folders can be used individually to run using eclipse. <br>
+5) After completing the installations, clone this repository : "https://github.com/Nishanth-ck/BEL-Internship-Projects.git" and add it to "eclipse-workspace: folder in C drive. Both CTAP and MTAP folders can be used individually to run using eclipse. <br>
 6) After the folders are displayed on the eclipse screen, install the jar file from : https://www.postgresql.org/download/ and add it to buil path configuration. <br>
 7) Set up the database (especially questions and answers) in the local server postgreSQL : the tables used are -> (mtap_information,users,instructors,questions,answers,result,test) <br>
 8) Run the project : Open the project folder to run (CTAP or MTAP) -> go to Main.java and right click on it -> Run as Java Application <br>

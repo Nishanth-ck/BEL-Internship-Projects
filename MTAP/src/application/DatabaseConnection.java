@@ -14,9 +14,9 @@ import java.util.List;
 import javafx.scene.image.Image;
 
 public class DatabaseConnection {
-	private static final String URL = "jdbc:postgresql://localhost:5432/MTAPdb1"; // Your database URL
-    private static final String USER = "postgres"; //  database username
-    private static final String PASSWORD = "nishu@09072004"; // Your database password
+	 private static final String URL = "jdbc:postgresql://localhost:5432/your_database_name"; // Your database URL
+	    private static final String USER = "postgres"; //  database username
+	    private static final String PASSWORD = "database_password"; // Your database password
 
     // Method to establish a connection to the database
     public static Connection connect() {

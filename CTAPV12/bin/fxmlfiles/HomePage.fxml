@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1445.0" style="-fx-background-color: white; -fx-border-color: BLACK;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <children>
+      <ImageView fx:id="Homebc" fitHeight="732.0" fitWidth="1582.0" layoutX="3.2" layoutY="65.0" pickOnBounds="true" style="-fx-opacity: 0.3;" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-139.0">
+         <image>
+            <Image url="@../Images/background_image.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-6.0" prefHeight="64.0" prefWidth="1446.0" style="-fx-background-color: GOLD; -fx-border-color: BLACK;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="14.0" prefHeight="43.0" prefWidth="1431.0" text="COGNITIVE TEST APPLICATION FOR PILOTS" textFill="#e11b1b" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="90.0" prefHeight="43.0" prefWidth="1445.0" text="PLEASE CHOOSE YOUR ROLE :" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="instructorbtn" layoutX="251.0" layoutY="520.0" mnemonicParsing="false" onAction="#instructorbtnClicked" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: orange; -fx-border-color: black; -fx-border-width: 2;" text="INSTRUCTOR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="usersbtn" layoutX="937.0" layoutY="515.0" mnemonicParsing="false" onAction="#usersbtnClicked" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: orange; -fx-border-color: black; -fx-border-width: 2;" text="USERS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="2.0" layoutY="64.0" prefHeight="30.0" prefWidth="1445.0" text="Welcome !" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="304.0" fitWidth="341.0" layoutX="922.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/student.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="instructorImage" fitHeight="353.0" fitWidth="461.0" layoutX="235.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/instructor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="227.0" layoutX="1138.0" layoutY="70.0" pickOnBounds="true" AnchorPane.rightAnchor="80.0">
+         <image>
+            <Image url="@../Images/bel_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="148.0" fitWidth="128.0" layoutX="43.0" layoutY="65.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/CompanyLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

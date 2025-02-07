@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1445.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InstructorRegisterController">
+   <children>
+      <ImageView fitHeight="746.0" fitWidth="1654.0" layoutX="-59.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.7;" AnchorPane.leftAnchor="0.0">
+         <image>
+            <Image url="@../Images/instructor_background.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="9.0" layoutY="-3.0" prefHeight="51.0" prefWidth="1445.0" style="-fx-background-color: gold; -fx-border-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="40.0" prefWidth="560.0" text="INSTRUCTOR REGISTRATION " textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="InstructorRegisterBtn" layoutX="763.0" layoutY="434.0" mnemonicParsing="false" onAction="#InstructorRegisterBtnClicked" prefHeight="44.0" prefWidth="261.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-width: 2; -fx-border-color: blue;" text="SIGN IN" textFill="GREEN" AnchorPane.leftAnchor="763.0" AnchorPane.rightAnchor="421.0">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="297.0" layoutY="124.0" prefHeight="28.0" prefWidth="226.0" text="Instructor Name :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="343.0" layoutY="172.0" prefHeight="34.0" prefWidth="178.0" text="Instructor ID :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="279.0" layoutY="219.0" prefHeight="40.0" prefWidth="234.0" text="Instructor Password :" textFill="#d142d1">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="296.0" layoutY="273.0" prefHeight="34.0" prefWidth="219.0" text="Confirm Password :" textFill="#bf22bf">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="332.0" layoutY="325.0" prefHeight="26.0" prefWidth="172.0" text="Mobile Number :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="361.0" layoutY="359.0" prefHeight="42.0" prefWidth="186.0" text="Email ID :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <TextField fx:id="InstructorName" layoutX="531.0" layoutY="121.0" prefHeight="34.0" prefWidth="330.0" promptText="Name" AnchorPane.leftAnchor="531.0" AnchorPane.rightAnchor="583.4" />
+      <TextField fx:id="InstructorID" layoutX="531.0" layoutY="172.0" prefHeight="34.0" prefWidth="330.0" promptText="SET ID" AnchorPane.leftAnchor="531.0" AnchorPane.rightAnchor="583.4000000000001" />
+      <PasswordField fx:id="InstructorPassword" layoutX="531.0" layoutY="220.0" prefHeight="40.0" prefWidth="330.0" promptText="Password should be of 8 letters minimum" AnchorPane.leftAnchor="531.0" AnchorPane.rightAnchor="583.4000000000001" />
+      <PasswordField fx:id="ConfirmPassword" layoutX="531.0" layoutY="267.0" prefHeight="40.0" prefWidth="330.0" promptText="Password should be of 8 letters minimum" AnchorPane.leftAnchor="531.0" AnchorPane.rightAnchor="583.4000000000001" />
+      <TextField fx:id="MobileNumber" layoutX="530.0" layoutY="322.0" prefHeight="34.0" prefWidth="331.0" promptText="10 digit mobile no" AnchorPane.leftAnchor="530.0" AnchorPane.rightAnchor="583.5999999999999" />
+      <TextField fx:id="GmailId" layoutX="530.0" layoutY="363.0" prefHeight="34.0" prefWidth="331.0" promptText="email ID" AnchorPane.leftAnchor="530.0" AnchorPane.rightAnchor="583.5999999999999" />
+      <Label fx:id="lblMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="556.0" prefHeight="34.0" prefWidth="577.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="83.0" fitWidth="227.0" layoutX="1100.0" layoutY="54.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/bel_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="148.0" fitWidth="135.0" layoutX="95.0" layoutY="47.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/CompanyLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

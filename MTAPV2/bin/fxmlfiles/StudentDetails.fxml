@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1445.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentDetailsController">
+   <children>
+      <Pane prefHeight="63.0" prefWidth="1445.0" style="-fx-background-color: gold;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      
+      <!-- Title Label -->
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="41.0" prefWidth="600.0" text="USER DETAILS" textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Elephant" size="37.0" />
+         </font>
+      </Label>
+      
+      <!-- Labels for User Details -->
+      <Label layoutX="275.0" layoutY="66.0" prefHeight="47.0" prefWidth="171.0" text="Enter User's ID" textFill="BLUE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="147.0" prefHeight="25.0" prefWidth="153.0" text="User Name:" textFill="BLUE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="172.0" prefHeight="25.0" prefWidth="185.0" text="User Mobile Number" textFill="BLUE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="198.0" prefHeight="25.0" prefWidth="185.0" text="User Gmail ID:" textFill="BLUE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="userNameLbl" layoutX="578.0" layoutY="147.0" prefHeight="25.0" prefWidth="228.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="mobileLbl" layoutX="581.0" layoutY="172.0" prefHeight="25.0" prefWidth="228.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="gmailLbl" layoutX="593.0" layoutY="198.0" prefHeight="25.0" prefWidth="228.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      
+      <!-- Get Details Button -->
+      <Button fx:id="getDetails" layoutX="785.0" layoutY="72.0" mnemonicParsing="false" onAction="#getDetailsClicked" prefHeight="34.0" prefWidth="154.0" text="GET DETAILS">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+         <style>
+            -fx-background-color: #eb1010;
+            -fx-text-fill: white;-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue; -fx-border-width: 2;</style>
+      </Button>
+      <TextField fx:id="userIdText" layoutX="424.0" layoutY="72.0" prefHeight="34.0" prefWidth="335.0" />
+      <Label layoutX="392.0" layoutY="225.0" prefHeight="25.0" prefWidth="185.0" text="Total Tests Alloted :" textFill="BLUE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="251.0" prefHeight="25.0" prefWidth="153.0" text="Attempted Tests :" textFill="GREEN">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1009.0" layoutY="250.0" prefHeight="26.0" prefWidth="186.0" text="Not Attempted Tests :" textFill="RED">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <VBox fx:id="container1" layoutX="392.0" layoutY="285.0" prefHeight="475.0" prefWidth="606.0" />
+      <Label fx:id="testAllotedLbl" layoutX="598.0" layoutY="225.0" prefHeight="25.0" prefWidth="228.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitBtn" layoutX="64.0" layoutY="654.0" mnemonicParsing="false" onAction="#exitBtnClicked" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: CYAN; -fx-background-radius: 32PX; -fx-border-color: RED; -fx-border-radius: 32PX; -fx-border-width: 2;" text="EXIT" textFill="RED" AnchorPane.bottomAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <VBox fx:id="container2" layoutX="998.0" layoutY="276.0" prefHeight="565.0" prefWidth="710.0" />
+      <Label fx:id="testAttemptedLbl" layoutX="590.0" layoutY="251.0" prefHeight="25.0" prefWidth="228.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="testNotAttemptedLbl" layoutX="1195.0" layoutY="250.0" prefHeight="26.0" prefWidth="238.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLbl" layoutX="791.0" layoutY="122.0" prefHeight="34.0" prefWidth="467.0" text="FETCH STATUS :" />
+      <ImageView fitHeight="83.0" fitWidth="227.0" layoutX="1132.0" layoutY="61.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/bel_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+HOW TO RUN BEL INTERNSHIP PROJECTS :
+	
+MY SYSTEM : 
+
+4 COMPONENTS : 1)Eclipse 2)JavaFX 3)Screenbuilder 4)PostgreSQL
+
+The PostgreSQL has already the required questions in it's server in : 
+
+(for CTAP)
+private static final String URL = "jdbc:postgresql://localhost:5432/CTAPdb2"; // Your database URL												private static final String USER = "postgres"; //  database username															private static final String PASSWORD = "nishu@09072004"; // Your database password
+
+(for MTAP)
+private static final String URL = "jdbc:postgresql://localhost:5432/MTAPdb1"; // Your database URL
+    private static final String USER = "postgres"; //  database username
+    private static final String PASSWORD = "nishu@09072004"; 
+
+the database contains a schema with 7 tables : (mtap_information,users,instructors,questions,answers,result,test)
+
+walkthrough of code : separate for : a)user and b)instructor
+
+to run :
+open eclipse -> click on main.java -> run as java application 

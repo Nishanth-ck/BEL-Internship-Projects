@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1445.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UsersRegisterController">
+   <children>
+      <ImageView fitHeight="737.0" fitWidth="1438.0" layoutX="8.0" layoutY="61.0" pickOnBounds="true" style="-fx-opacity: 0.5;">
+         <image>
+            <Image url="@../Images/student_bg.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="9.0" layoutY="-3.0" prefHeight="61.0" prefWidth="669.0" style="-fx-background-color: gold;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="40.0" prefWidth="560.0" text="USER REGISTRATION " textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="UserRegisterBtn" layoutX="847.0" layoutY="492.0" mnemonicParsing="false" onAction="#UserRegisterBtnClicked" prefHeight="42.0" prefWidth="228.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue; -fx-border-width: 2;" text="SIGN IN" textFill="GREEN">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="350.0" layoutY="103.0" prefHeight="25.0" prefWidth="158.0" text="User Name :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="368.0" layoutY="166.0" prefHeight="25.0" prefWidth="158.0" text="User ID :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="315.0" layoutY="224.0" prefHeight="28.0" prefWidth="194.0" text="User Password :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="293.0" prefHeight="28.0" prefWidth="210.0" text="Confirm Password :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" layoutY="353.0" prefHeight="28.0" prefWidth="210.0" text="Mobile Number :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="368.0" layoutY="415.0" prefHeight="25.0" prefWidth="158.0" text="Gmail ID :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <TextField fx:id="UserName" layoutX="533.0" layoutY="97.0" prefHeight="40.0" prefWidth="412.0" />
+      <TextField fx:id="UserID" layoutX="533.0" layoutY="159.0" prefHeight="42.0" prefWidth="412.0" />
+      <PasswordField fx:id="UserPassword" layoutX="533.0" layoutY="217.0" prefHeight="42.0" prefWidth="412.0" promptText="Password should be of 8 letters minimum" />
+      <PasswordField fx:id="ConfirmPassword" layoutX="533.0" layoutY="287.0" prefHeight="40.0" prefWidth="412.0" promptText="Password should be of 8 letters minimum" />
+      <TextField fx:id="MobileNumber" layoutX="533.0" layoutY="347.0" prefHeight="40.0" prefWidth="412.0" promptText="10 digit ph. no." />
+      <TextField fx:id="GmailId" layoutX="533.0" layoutY="409.0" prefHeight="40.0" prefWidth="412.0" />
+      <Label fx:id="lblMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="533.0" layoutY="541.0" prefHeight="34.0" prefWidth="577.0">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font></Label>
+      <ImageView fitHeight="148.0" fitWidth="135.0" layoutX="36.0" layoutY="63.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/CompanyLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="238.0" layoutX="1159.0" layoutY="62.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/bel_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

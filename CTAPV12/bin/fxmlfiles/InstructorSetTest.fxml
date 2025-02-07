@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1445.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InstructorSetTestController">
+   <children>
+      <ImageView fitHeight="752.0" fitWidth="1559.0" layoutY="54.0" pickOnBounds="true" style="-fx-opacity: 0.7;">
+         <image>
+            <Image url="@../Images/SkyBackground.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-6.0" prefHeight="54.0" prefWidth="1445.0" style="-fx-background-color: gold; -fx-border-radius: balck;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      
+      <!-- Title Label -->
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="14.0" prefHeight="42.0" prefWidth="589.0" text="INSTRUCTOR TEST SETTING PAGE" textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Label>
+      
+      <!-- View Student Details Button -->
+      <Button fx:id="viewStudentDetailsBtn" layoutX="850.0" layoutY="351.0" mnemonicParsing="false" onAction="#viewStudentDetailsBtnClicked" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: cyan; -fx-background-radius: black; -fx-border-radius: 32px; -fx-background-radius: 32px; -fx-border-color: blue;" text=" User's Details" textFill="GREEN">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+
+      <!-- Buttons (Logout & Confirm) -->
+      <Button fx:id="logoutBtn" layoutX="38.0" layoutY="612.0" mnemonicParsing="false" onAction="#logoutBtnClicked" prefHeight="64.0" prefWidth="186.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: red;" text="LOGOUT" textFill="RED">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="setTestBtn" layoutX="848.0" layoutY="272.0" mnemonicParsing="false" onAction="#setTestBtnClicked" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue;" text="Set Test" textFill="GREEN">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="viewResultDetailsBtn" layoutX="845.0" layoutY="441.0" mnemonicParsing="false" onAction="#viewResultDetailsBtnClicked" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue;" text="View Result" textFill="GREEN">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="368.0" layoutY="283.0" prefHeight="35.0" prefWidth="444.0" text="Click here to set a test for the User " textFill="#191b1b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="369.0" layoutY="367.0" prefHeight="35.0" prefWidth="410.0" text="Click here to view User's details " textFill="#252323">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="373.0" layoutY="449.0" prefHeight="35.0" prefWidth="401.0" text="Click here to view Result" textFill="#141212">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label fx:id="instructornameLbl" layoutX="266.0" layoutY="161.0" prefHeight="25.0" prefWidth="345.0" text="Instructor Name :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label fx:id="instructoridLbl" layoutX="266.0" layoutY="196.0" prefHeight="25.0" prefWidth="345.0" text="Instructor ID :">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="instructormobileLbl" layoutX="533.0" layoutY="612.0" prefHeight="35.0" prefWidth="575.0" text="Instructor Mobile number  :" AnchorPane.bottomAnchor="68.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="instructorgmailLbl" layoutX="533.0" layoutY="658.0" prefHeight="35.0" prefWidth="614.0" text="Instructor Gmail ID :" AnchorPane.bottomAnchor="21.799999999999955">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ImageView fitHeight="148.0" fitWidth="134.0" layoutX="51.0" layoutY="56.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/CompanyLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="233.0" layoutX="1119.0" layoutY="54.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/bel_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

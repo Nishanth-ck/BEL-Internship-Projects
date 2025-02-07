@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1445.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UsersLoginController">
+   <children>
+      <ImageView fitHeight="783.0" fitWidth="1445.0" layoutY="59.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/student_bg.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="8.0" layoutY="7.0" prefHeight="59.0" prefWidth="1439.0" style="-fx-background-color: gold;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="8.0" prefHeight="33.0" prefWidth="292.0" text="USERS LOGIN" textFill="#e11818" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="807.0" layoutY="615.8000000000001" prefHeight="34.0" prefWidth="359.0" text="DO NOT HAVE AN ACCOUNT?" textFill="RED" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="807.0" AnchorPane.rightAnchor="279.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font></Label>
+      <Button fx:id="UsersRegisterBtn" layoutX="1040.0" layoutY="674.0" mnemonicParsing="false" onAction="#UsersRegisterBtnClicked" prefHeight="39.0" prefWidth="166.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue; -fx-border-width: 2;" text="SIGN UP" textFill="GREEN" AnchorPane.bottomAnchor="2.0">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="UsersID" layoutX="568.0" layoutY="159.0" prefHeight="47.0" prefWidth="308.0" promptText="Enter Student ID" AnchorPane.leftAnchor="568.0" AnchorPane.rightAnchor="568.8" />
+      <PasswordField fx:id="UsersPassword" layoutX="568.0" layoutY="227.0" prefHeight="47.0" prefWidth="308.0" promptText="Password" AnchorPane.leftAnchor="568.0" AnchorPane.rightAnchor="568.8" />
+      <Button fx:id="UsersLoginBtn" layoutX="740.0" layoutY="307.0" mnemonicParsing="false" onAction="#UsersLoginBtnClicked" prefHeight="41.0" prefWidth="244.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-color: blue; -fx-border-radius: 32px; -fx-border-width: 2;" text="LOGIN" textFill="GREEN" AnchorPane.rightAnchor="461.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font></Button>
+      <Label fx:id="lblMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="652.0" layoutY="382.0" prefHeight="39.0" prefWidth="398.0">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <Label layoutX="884.4" layoutY="651.0" text="CLICK HERE TO SIGN UP" textFill="RED" AnchorPane.bottomAnchor="40.799999999999955" AnchorPane.leftAnchor="884.4" AnchorPane.rightAnchor="282.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="480.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="83.0" fitWidth="253.0" layoutX="1152.0" layoutY="59.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/bel_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="148.0" fitWidth="125.0" layoutX="26.0" layoutY="59.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/CompanyLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1445.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuizController">
+   <children>
+      <Pane layoutY="53.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="51.0" prefWidth="641.0" style="-fx-background-color: gold; -fx-border-width: 2; -fx-border-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+         <children>
+            <Label fx:id="questionNumberlbl" alignment="CENTER" layoutX="78.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="51.0" prefWidth="125.0" text="QUESTION:">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1196.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="150.0" text="Time: 00:00">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <ImageView fx:id="question" fitHeight="150.0" fitWidth="500.0" layoutX="473.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="473.0" AnchorPane.rightAnchor="472.0" />
+      <Line endX="525.0" layoutX="115.0" startX="-115.0" />
+      <Button fx:id="previousBtn" layoutX="63.0" layoutY="547.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToPrevious" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ffb70f; -fx-border-radius: 32px; -fx-background-radius: 32px; -fx-border-color: red;" text="SAVE&amp;PREVIOUS" AnchorPane.bottomAnchor="117.60000000000002" AnchorPane.leftAnchor="63.0">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="nextBtn" layoutX="1194.0" layoutY="555.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToNext" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #84e435; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: green;" text="SAVE&amp;NEXT" AnchorPane.bottomAnchor="109.60000000000002" AnchorPane.rightAnchor="51.0">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="endTestBtn" layoutX="63.0" layoutY="705.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToEnd" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ec5628; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: black;" text="END TEST" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="63.0">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="questionsRemaining" alignment="CENTER" contentDisplay="CENTER" layoutX="966.0" layoutY="719.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="36.0" prefWidth="392.0" text="TOTAL QUESTIONS REMAINING :" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="87.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="questionsIndexBtn" layoutX="641.0" layoutY="705.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToIndex" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #bf4c4c; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: black;" text="QUESTIONS INDEX" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="641.0">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="Clear" layoutX="641.0" layoutY="547.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#Clear" prefHeight="36.0" prefWidth="200.0" style="-fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue;" text="CLEAR RESPONSE" textFill="#1e00ff" AnchorPane.bottomAnchor="118.0" AnchorPane.leftAnchor="641.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fx:id="optionA" fitHeight="129.0" fitWidth="150.0" layoutX="188.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="optionB" fitHeight="129.0" fitWidth="150.0" layoutX="506.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="optionC" fitHeight="129.0" fitWidth="150.0" layoutX="792.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="optionD" fitHeight="129.0" fitWidth="150.0" layoutX="1134.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="questionPrompt" alignment="CENTER" contentDisplay="CENTER" layoutY="94.0" prefHeight="51.0" prefWidth="1445.0" text="Question Prompt">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="profile" fitHeight="42.0" fitWidth="43.0" layoutX="1315.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="testIdLbl" layoutX="38.0" layoutY="15.0" prefHeight="17.0" prefWidth="378.0" text="TEST ID" />
+      <Button fx:id="opt1" layoutX="292.0" layoutY="455.0" mnemonicParsing="false" onAction="#opt1clicked" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue;" text="Button" />
+      <Button fx:id="opt3" layoutX="292.0" layoutY="530.0" mnemonicParsing="false" onAction="#opt3clicked" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue;" text="Button" />
+      <Button fx:id="opt4" layoutX="824.0" layoutY="530.0" mnemonicParsing="false" onAction="#opt4clicked" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue;" text="Button" />
+      <Button fx:id="opt2" layoutX="824.0" layoutY="455.0" mnemonicParsing="false" onAction="#opt2clicked" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: cyan; -fx-background-radius: 32px; -fx-border-radius: 32px; -fx-border-color: blue;" text="Button" />
+      <Label fx:id="topicNameLbl" layoutX="418.0" layoutY="15.0" prefHeight="17.0" prefWidth="392.0" text="TOPIC NAME" />
+      <Label fx:id="userIdLbl" layoutX="1065.0" layoutY="20.0" prefHeight="24.0" prefWidth="347.0" text="USER ID :" />
+      <ImageView fitHeight="83.0" fitWidth="257.0" layoutX="1141.0" layoutY="104.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/bel_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="305.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1.0" prefWidth="1445.0" style="-fx-background-color: gold; -fx-border-width: 2; -fx-border-color: black;" />
+      <Pane layoutX="1.0" layoutY="438.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1.0" prefWidth="1445.0" style="-fx-background-color: gold; -fx-border-width: 2; -fx-border-color: black;" />
+   </children>
+</AnchorPane>
